@@ -13,10 +13,10 @@ export class CreatePokemonDto {
     @IsOptional()
     @IsNumber()
     @Min(0)
-    hp:number; 
+    hp?:number; 
     
     @IsOptional()
     @IsArray()
     @IsString({ each: true})
-    sprites:string[];
+    sprites?:string[];
 }
